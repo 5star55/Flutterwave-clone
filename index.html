@@ -1,417 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flutterwave clone</title>
-  <link href="https://hover:text-teal-400 fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flutterwave Clone</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen w-screen bg-white m-0 mt-10">
-<nav class="flex flex-wrap justify-around items-center">
-  <img src="download (1).png" class="h-16 w-auto mr-6" alt="Logo">
-  <ul class="flex justify-between space-x-6 items-center ">
+<body class="bg-white m-0">
+
+<!-- NAVBAR -->
+<nav class="flex flex-wrap justify-between items-center px-4 sm:px-10 py-4">
+  <img src="download (1).png" class="h-12 sm:h-16 w-auto" alt="Logo">
+  <ul class="flex flex-wrap gap-4 sm:gap-6 items-center text-sm sm:text-base">
     <li>Enterprises</li>
     <li>SME</li>
     <li>Personal</li>
     <li>Resources</li>
     <li>Developers</li>
-    <!-- <li>Company</li> -->
   </ul>
-  <button class="bg-gray-100 text-black hover:text-teal-400 font-mono ml-8 rounded-lg  px-1 py-2 hover:bg-blue-900">Sign in</button>
+  <button class="bg-gray-100 text-black hover:text-teal-400 font-mono rounded-lg px-2 py-1 hover:bg-blue-900 mt-2 sm:mt-0">Sign in</button>
 </nav>
 
-<main>
+<main class="px-4 sm:px-10 md:px-20">
 
-<div class="ml-20 mt-20 flex flex-col justify-center">
-<h1 class="text-orange-500 text-[90px] hover:text-teal-400 font-extrabold hover:text-teal-400 font-serif ">Endless</h1>
-<h1 class="text-orange-500 text-[90px] hover:text-teal-400 font-extrabold hover:text-teal-400 font-serif">Possibility</h1>
-<h1 class="text-black text-[90px] hover:text-teal-400 font-extrabold hover:text-teal-400 font-serif ">For all</h1>
-<div class="w-full sm:w-1/2">
-    <p class="text-[20px]">Empowering businesses of all sizes with seamless payment solutions tailored for enterprises, startups, and emerging markets.</p>
+<!-- HERO -->
+<div class="mt-10 flex flex-col items-start">
+  <h1 class="text-orange-500 text-4xl sm:text-6xl md:text-[90px] font-extrabold font-serif hover:text-teal-400">Endless</h1>
+  <h1 class="text-orange-500 text-4xl sm:text-6xl md:text-[90px] font-extrabold font-serif hover:text-teal-400">Possibility</h1>
+  <h1 class="text-black text-4xl sm:text-6xl md:text-[90px] font-extrabold font-serif hover:text-teal-400">For all</h1>
+  <div class="w-full sm:w-1/2 mt-4">
+    <p class="text-base sm:text-lg md:text-xl">Empowering businesses of all sizes with seamless payment solutions tailored for enterprises, startups, and emerging markets.</p>
+  </div>
+  <button class="mt-6 bg-blue-900 text-white px-6 py-2 rounded-md text-lg hover:bg-blue-800">Contact Sales</button>
 </div>
-<button class="mt-10 bg-blue-900 w-[150px] rotext-lg  py-1 px-6 mb-10">Contact Sales</button>
-</div>
-<section class="flex flex-col md:flex-row w-screen md:h-screen space-y-6 md:space-y-0 md:space-x-10 md:mr-5">
-  <div class="w-full md:w-1/2 h-64 md:h-full">
+
+<!-- IMAGE + TEXT SECTION -->
+<section class="flex flex-col md:flex-row gap-6 mt-10">
+  <div class="w-full md:w-1/2 h-64 md:h-auto">
     <img src="sweetpod.jpg" alt="Sweetpod" class="w-full h-full object-cover">
   </div>
-
   <div class="w-full md:w-1/2 flex flex-col">
     <div class="h-64 md:h-4/5">
       <img src="e25_dresses.jpg" alt="E25 Dresses" class="w-full h-full object-cover">
     </div>
-    <div class="p-4 md:h-1/5">
-      <p class="text-base mdtext-lg  mx-1">
-        Send money home to loved ones, sell online as a small business, process global payments as an enterprise, build financial products as a startup. With Flutterwave, the question isn't what's possible—it is: what isn't?
-      </p>
+    <div class="p-4">
+      <p class="text-base sm:text-lg">Send money home to loved ones, sell online as a small business, process global payments as an enterprise, build financial products as a startup. With Flutterwave, the question isn't what's possible—it is: what isn't?</p>
     </div>
   </div>
 </section>
 
-<div class="mt-[120px] mx-10 px-4 mb-10 text-[20px] hover:text-teal-400 font-mono">
-  <p>We are trusted by leading businesses across different sectors</p>
-
-  <div class=" flex flex-wrap space-y-10 space-x-10 items-center md:space-x-10">
-    <img src="uber.svg" alt="uber" width="100px" class="mt-8">
-    <img src="mtn.svg" alt="mtn" width="110px">
-    <img src="chipper.svg" alt="chipper" width="110px">
-    <img src="piggyvest.svg" alt="piggyvest" width="110px">
-    <img src="wise.svg" alt="wise" width="110px">
-    <img src="microsoft.svg" alt="microsoft" width="110px">
-    <img src="air-peace.svg" alt="airpeace" width="110px">
+<!-- TRUSTED BY -->
+<div class="mt-12 text-lg sm:text-xl">
+  <p class="mb-6">We are trusted by leading businesses across different sectors</p>
+  <div class="flex flex-wrap gap-6 items-center">
+    <img src="uber.svg" alt="Uber" class="w-20 sm:w-24">
+    <img src="mtn.svg" alt="MTN" class="w-24">
+    <img src="chipper.svg" alt="Chipper" class="w-24">
+    <img src="piggyvest.svg" alt="Piggyvest" class="w-24">
+    <img src="wise.svg" alt="Wise" class="w-24">
+    <img src="microsoft.svg" alt="Microsoft" class="w-24">
+    <img src="air-peace.svg" alt="Air Peace" class="w-24">
   </div>
 </div>
 
-<section class>
-    <div class="mt-[150px] mx-20">
-        <h1 class="flex flex-wrap smtext-[110px]text-lg  mx-1 touching-wide leading-normal text-[90px] hover:text-teal-400 font-extrabold hover:text-teal-400 font-serif my-20">Endless payment possibilities <span class="text-orange-400">for enterprises</span></h1>
-    </div>
+<!-- PAYMENT POSSIBILITIES HERO -->
+<section class="mt-20">
+  <h1 class="text-4xl sm:text-5xl md:text-[90px] font-extrabold font-serif hover:text-teal-400">Endless payment possibilities <span class="text-orange-400">for enterprises</span></h1>
 </section>
 
-<section class="mt-20 mx-[100px] flex flex-col md:flex-row space-x-10 justify-center">
-
-    <div class="mt-[100px] flex flex-col flex-1 flex-wrap">
-    <h1 class="hover:text-teal-400 font-mono hover:text-teal-400 font-bold text-[25px]">Online Checkout</h1>
-    <p class="mt-10 text-[20px]">Our online checkout features our smart payment ordering system, incredible speed, and beautiful simplicity. It's designed to grow your revenue and provide the best payment experience to your customers.</p>
-    <button class="mt-[30px] text-white bg-black h-[50px] w-[120px] rotext-lg ">Ge1 Started</button>
-</div>
-
-    <div class="flex-1 shadow">
-        <img src="checkout.png" height="400" alt="">
-    </div>
-
-    <div class="flex-1 flex flex-col">
-        <div>
-        <h1 class="mt-5 hover:text-teal-400 font-mono hover:text-teal-400 font-bold text-[25px]">Accept payments</h1>
-        <p class="mt-10 text-[20px] mb-10">Easily receive money from anyone, anywhere in the world via our multitude of secure payment methods.</p>
-
-        <a href="#" class="group inline-flex items-center text-orange-400 hover:text-teal-400 font-semibold">
-  Learn More
-  <span class="ml-2 transition-transform duration-300 group-hover:translate-x-2">></span>
-</a>
-</div>
-<div>
-    <h1 class="mt-5 hover:text-teal-400 font-mono hover:text-teal-400 font-bold text-[25px]">Transfers(Payout)</h1>
-    <p class="mt-10 text-[20px] mb-10">Make single or bulk transfers to bank accounts from your Flutterwave dashboard.</p>
-
-    <a href="#" class="group inline-flex items-center text-orange-400 hover:text-teal-400 font-semibold">Learn More  <span class="ml-2 transition-transform duration-300 group-hover:translate-x-2">></span></a>
-
-</div>
-
-    </div>
-</section>
-
-<section class="my-[150px] py-20 bg-sky-50">
-<h1 class="flex flex-wrap mx-[120px] text-[70px] hover:text-teal-400 font-serif hover:text-teal-400 font-extrabold">Endless payment possibilities for every <span class="text-green-700">Small Business.</span> </h1>
-
-<div class="relative flex flex-row flex-wrap text-lg :tex1-lg :h-[1000px]">
-
-  <div class="mx-[120px] text-lg :abs1ext-lg :tex1-lg :lte1t-lg :tex1-lg :h-112">
-    <h2 class="text-4lg hover:text-teal-400 font-semibold">Store</h2>
-    <p class="text-slate-600 mt-5 text-[25px]">
-     Create a free ecommerce website and start selling worldwide with just a few clicks.
-    </p>
-    <button class="mt-10 bg-black text-white w-[150px] rotext-lg  px-1 py-2">Start Selling</button>
+<!-- SERVICES SECTION -->
+<section class="mt-10 flex flex-col md:flex-row gap-6">
+  <div class="flex-1 flex flex-col gap-4">
+    <h2 class="text-xl sm:text-2xl font-bold hover:text-teal-400">Online Checkout</h2>
+    <p class="text-base sm:text-lg">Our online checkout features our smart payment ordering system, incredible speed, and beautiful simplicity. It's designed to grow your revenue and provide the best payment experience to your customers.</p>
+    <button class="mt-4 bg-black text-white py-2 px-4 rounded">Get Started</button>
   </div>
-
-
-  <div class="mt-10 bg-blue-500 text-lg abs1ext-lg tex1-lg rit1xt-lg tex1-lg h-112">
-    <img src="yanga_beauty.jpg" class="w-full h-full object-cover" />
+  <div class="flex-1">
+    <img src="checkout.png" alt="Checkout" class="w-full h-auto object-cover">
   </div>
-
-
-  <div class="bg-red-500text-lg :abs1ext-lg :bot1ext-lg :lte1t-lg :tex1-lg :h-112">
-    <img src="creator.png" class="w-full h-full object-cover" />
-  </div>
-
-  <div class="p-6 stext-lg :abs1ext-lg :bot1ext-lg :rit1xt-lg :tex1-lg :h-112">
-    <div class="flex flex-col">
+  <div class="flex-1 flex flex-col gap-6">
     <div>
-    <h2 class="mt-10 text-lg hover:text-teal-400 font-semibold">Invoices</h2>
-    <p class="mt-[50px] text-slate-600 mt-2">
-      Generate professional invoices for your customers and get paid from anywhere.
-    </p>
-
-    <a href="" class="group inline-flex items-center mt-10 text-orange-400 hover:text-teal-400 font-semibold">Get Started <span class="ml-2 transition-transform duration-300 group-hover:translate-x-2">></span></a>
+      <h2 class="text-xl sm:text-2xl font-bold hover:text-teal-400">Accept payments</h2>
+      <p class="text-base sm:text-lg">Easily receive money from anyone, anywhere in the world via our multitude of secure payment methods.</p>
+      <a href="#" class="text-orange-400 hover:text-teal-400 font-semibold inline-flex items-center mt-2">Learn More <span class="ml-2">></span></a>
     </div>
-  <div class="mt-10">
-    <h2 class="text-lg hover:text-teal-400 font-semibold">Payment Links</h2>
-    <p class="mt-[50px] text-slate-600 mt-2">
-      Receive one-off or recurring payments from anyone, anywhere, via your unique payment link.
-    </p>
-
-    <a href="" class="group inline-flex items-center mt-10 text-orange-400 hover:text-teal-400 font-semibold">Learn more <span class="ml-2 transition-transform duration-300 group-hover:translate-x-2">></span></a>
-</div>  
-</div>
-
-</div>
-</div>
-
-<div>
-    <p class="mx-10 mt-20text-lg  mx-1 tracking-wide leading-normal sm:text-[50px] hover:text-teal-400 font-serif">Let’s play to our strengths, shall we? You focus on bringing your amazing ideas to life and we focus on providing all the <span class="text-green-600">commerce tools</span> you need.</p>
-
-    <button class="mt-10 text-2lg py-3 px-3 bg-blue-950 rotext-lg  ml-10">Okay, let's go</button>
-</div>
-
-
-<section class="text-white bg-stone-950 " >
-<h1 class="text-center mt-20 mx-10 pt-10 text-[50px] hover:text-teal-400 font-extrabold hover:text-teal-400 font-serif">Endless payment possibilities for every <span class="text-rose-300">individual</span></h1>
-
-<p class="text-center mx-10 text-[25px] mt-10">Flutterwave offers a host of seamless products for individuals, ensuring smooth transactions and efficient money management.</p>
-
-
-<div class="w-auto h-screen flex items-center justify-center">
-  
-  
-  <div class="relative flex items-start flex-col gap-4 sm:flex-row">
-    
-    <!-- 1 Card -->
-    <div class="bg-neutral-800 text-xsm shadow-3lg sm:w-96 sm:h-72 rounded-lg stext-lg  -ml120 z-10 transition-all duration-300">
-        <h1 class="hover:text-teal-400 font-extrabold text-lg mt-10 mx-10 text-center">Send money to loved ones</h1>
-      <p class="p-4 smtext-lg  mx-1">Experience the convenience and security of Send, enabling you to effortlessly and securely transfer funds to your beloved ones residing overseas. Begin sharing financial support with the ones who hold significance in your life right here</p>
+    <div>
+      <h2 class="text-xl sm:text-2xl font-bold hover:text-teal-400">Transfers (Payout)</h2>
+      <p class="text-base sm:text-lg">Make single or bulk transfers to bank accounts from your Flutterwave dashboard.</p>
+      <a href="#" class="text-orange-400 hover:text-teal-400 font-semibold inline-flex items-center mt-2">Learn More <span class="ml-2">></span></a>
     </div>
-
-    <!-- 2 Card -->
-    <div class="bg-neutral-800 text-xsm shadow-3lg sm:w-96 sm:h-72 rounded-lg stext-lg  -ml120 z-20 transition-all duration-300 hover:translate-x-16">
-        <h1 class="hover:text-teal-400 font-extrabold sm:text-lg mt-10 mx-10 text-center">Shop Online</h1>
-      <p class="p-4 smtext-lg  mx-1">Explore a world of possibilities as you Discover, Shop, and have your purchases conveniently delivered from your cherished online businesses. Embark on a secure shopping journey and relish the joy of acquiring great items from amazing small businesses, right here</p>
-    </div>
-
-    <!-- 3 Card -->
-    <div class="bg-neutral-800 text-xsm shadow-3lg sm:w-96 sm:h-72 rounded-lg stext-lg  z-31">
-        <h1 class="hover:text-teal-400 font-extrabold sm:text-lg mt-10 mx-10 text-center">Find events and Buy tickets</h1>
-      <p class="p-4 smtext-lg  mx-1">Browse upcoming events and secure your ticket on our Afritickets platform <a href="#" class="underlined">here</a></p>
-    </div>
-
   </div>
-</div>
-</section>
-<h1 class="text-[30px] sm:text-[70px] mx-[100px] hover:text-teal-400 font-extrabold hover:text-teal-400 font-serif">Well documented and easy-to-use <span class="text-rose-400">APIs</span> for <span class="text-rose-400">developers</span></h1>
-
-<p class="w-full sm:w-1/2 text-slate-900 mx-5 sm:mx-20 text-2lg mt-10">We have done the core payments integrations and abstractions, so your team can easily integrate with our APIs and access multiple payment functionalities.</p>
-
-<div>
-<ul class="sm:mx-10 mt-10 list-none mx-5text-lg  mx-1 text-serif text-slate-900" >
-  <li class="flex items-center relative pl-12 mb-3 mr-2">
-    <span class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-4 bg-sky-950 rounded-full"></span>
-    Quick transfers
-  </li>
-  <li class="flex items-center relative pl-12 mb-3">
-    <span class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-4 bg-sky-950 rounded-full"></span>
-   Initiate one-time and recurring payments
-
-  </li>
-  <li class="flex items-center relative pl-12 mb-3">
-    <span class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-4 bg-sky-950 rounded-full"></span>
-    Payment verification
-  </li>
-
-  <li class="flex items-center relative pl-12 mb-3">
-    <span class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-4 bg-sky-950 rounded-full"></span>
-    Instant virtual cards creation
-  </li>
-
-  <li class="flex items-center relative pl-12 mb-3">
-    <span class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-4 bg-sky-950 rounded-full"></span>
-    Customer verification
-  </li>
-
-</ul>
-
-</div>
-
-<button class="mt-10 mx-5 sm:mx-10 rounded-lg bg-sky-950 w-auto py-5 px-5">Read the API Docs</button>
 </section>
 
-
-  <h1 class="text-[60px] mx-5 sm:mx-10 mt-[150px] sm:mx-20 hover:text-teal-400 font-serif hover:text-teal-400 font-overbold mb-10">Our <span class="text-sky-900">Global</span> reach</h1>
-
-<div class="flex flex-wrap mx-5 sm:mx-10 gap-10">
-
-  <!-- LEFT GROUP: dots + text (ALWAYS together) -->
-  <div class="flex flex-1 min-w-[300px]">
-
-    <!-- Dots -->
-    <div class="flex flex-col items-center">
-      <p>||</p>
-      <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
-      <p>||</p>
-      <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
-      <p>||</p>
-      <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+<!-- SMALL BUSINESS SECTION -->
+<section class="mt-20 bg-sky-50 py-10">
+  <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold font-serif hover:text-teal-400">Endless payment possibilities for every <span class="text-green-700">Small Business</span></h1>
+  <div class="flex flex-col md:flex-row flex-wrap gap-6 mt-6">
+    <div class="flex-1">
+      <h2 class="text-xl font-semibold hover:text-teal-400">Store</h2>
+      <p class="mt-2 text-base sm:text-lg">Create a free ecommerce website and start selling worldwide with just a few clicks.</p>
+      <button class="mt-4 bg-black text-white px-4 py-2 rounded">Start Selling</button>
     </div>
-
-    <!-- Text -->
-    <div class="ml-6 flex-1">
-      <div class="mb-16">
-        <h1 class="text-teal-500 text-lg hover:text-teal-400 font-extrabold">
-          30+ Currencies
-        </h1>
-        <p class="mt-2">
-          We accept payments in more than thirty currencies.
-        </p>
-      </div>
-
-      <div class="mb-16">
-        <h1 class="text-lg hover:text-teal-400 font-extrabold">20M+ API calls</h1>
-        <p class="mt-2">
-          API calls per day, peaking at 231 requests per second.
-        </p>
-      </div>
-
-      <div class="mb-5">
-        <h1 class="text-lg hover:text-teal-400 font-extrabold">
-          500k+ payments daily
-        </h1>
-        <p class="mt-2">
-          Average number of payments processed daily.
-        </p>
-
-        <section class="flex gap-10 mt-6">
-          <div>
-            <p>Debit & Credit cards</p>
-            <p>Mobile money</p>
-            <p>M-Pesa</p>
-            <p>Bank Transfer</p>
-          </div>
-          <div>
-            <p>Bank Account</p>
-            <p>POS</p>
-            <p>VISA QR</p>
-            <p>USSD</p>
-          </div>
-        </section>
-      </div>
+    <div class="flex-1">
+      <img src="yanga_beauty.jpg" alt="Store" class="w-full h-auto object-cover">
+    </div>
+    <div class="flex-1">
+      <img src="creator.png" alt="Creator" class="w-full h-auto object-cover">
+    </div>
+    <div class="flex-1 flex flex-col gap-4">
+      <h2 class="text-xl font-semibold hover:text-teal-400">Invoices</h2>
+      <p class="mt-2 text-base sm:text-lg">Generate professional invoices for your customers and get paid from anywhere.</p>
+      <a href="#" class="text-orange-400 hover:text-teal-400 font-semibold inline-flex items-center mt-2">Get Started <span class="ml-2">></span></a>
+      <h2 class="mt-6 text-xl font-semibold hover:text-teal-400">Payment Links</h2>
+      <p class="mt-2 text-base sm:text-lg">Receive one-off or recurring payments from anyone, anywhere, via your unique payment link.</p>
+      <a href="#" class="text-orange-400 hover:text-teal-400 font-semibold inline-flex items-center mt-2">Learn more <span class="ml-2">></span></a>
     </div>
   </div>
-
-  <!-- IMAGE -->
-  <div class="wtext-lg :w-a1to flex justify-center">
-    <img
-      src="Screenshot 2024-09-18 175329.png"
-      class="w-[500px] sm:w-[600px] rotext-lg "
-  1   alt=""
-    />
+</section>
+<!-- INDIVIDUAL USERS SECTION -->
+<section class="text-white bg-stone-950 py-20">
+  <div class="text-center px-4 sm:px-10 md:px-20">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-serif hover:text-teal-400">Endless payment possibilities for every <span class="text-rose-300">individual</span></h1>
+    <p class="mt-4 text-base sm:text-lg md:text-xl">Flutterwave offers a host of seamless products for individuals, ensuring smooth transactions and efficient money management.</p>
   </div>
 
+  <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start gap-6 mt-10 px-4 sm:px-10 md:px-20">
+    <!-- Card 1 -->
+    <div class="bg-neutral-800 rounded-lg shadow-lg w-full sm:w-80 md:w-96 p-4">
+      <h2 class="text-lg sm:text-xl font-extrabold text-center hover:text-teal-400 mt-4">Send money to loved ones</h2>
+      <p class="mt-2 text-base sm:text-lg">Experience the convenience and security of Send, enabling you to effortlessly and securely transfer funds to your beloved ones residing overseas.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-neutral-800 rounded-lg shadow-lg w-full sm:w-80 md:w-96 p-4 hover:translate-x-4 transition-transform duration-300">
+      <h2 class="text-lg sm:text-xl font-extrabold text-center hover:text-teal-400 mt-4">Shop Online</h2>
+      <p class="mt-2 text-base sm:text-lg">Discover, shop, and have your purchases conveniently delivered from online businesses. Secure shopping made easy.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-neutral-800 rounded-lg shadow-lg w-full sm:w-80 md:w-96 p-4">
+      <h2 class="text-lg sm:text-xl font-extrabold text-center hover:text-teal-400 mt-4">Find events and Buy tickets</h2>
+      <p class="mt-2 text-base sm:text-lg">Browse upcoming events and secure your ticket on our Afritickets platform <a href="#" class="underline">here</a>.</p>
+    </div>
   </div>
+</section>
 
-  <section class="p-10 text-white m-8 rounded-2lg bg-slate-950 height-auto mt-200px">
-    <h1 class="width-auto my-10 p-4 text-center  text-white text-[50px] hover:text-teal-400 font-extrabold">Ready to get started?</h1>
-    <p class="m-10 text-lg text">Create an account and instantly start accepting payments, selling your beautiful products online and building financial tools.</p>
+<!-- API SECTION -->
+<section class="px-4 sm:px-10 md:px-20 mt-20">
+  <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold font-serif hover:text-teal-400">Well documented and easy-to-use <span class="text-rose-400">APIs</span> for <span class="text-rose-400">developers</span></h1>
+  <p class="mt-4 w-full sm:w-1/2 text-base sm:text-lg md:text-xl text-slate-900">We have done the core payments integrations and abstractions, so your team can easily integrate with our APIs and access multiple payment functionalities.</p>
 
-    <a href="#" class="inline-flex items-center group mb-20 ml-10">Contact Sales <span class="transition-transform ml-2 duration-300 group-hover:translate-x-2">></span></a>
-  </section>
+  <ul class="mt-6 flex flex-col gap-4">
+    <li class="flex items-center pl-10 relative">
+      <span class="absolute left-0 w-4 h-4 bg-sky-950 rounded-full"></span>
+      Quick transfers
+    </li>
+    <li class="flex items-center pl-10 relative">
+      <span class="absolute left-0 w-4 h-4 bg-sky-950 rounded-full"></span>
+      Initiate one-time and recurring payments
+    </li>
+    <li class="flex items-center pl-10 relative">
+      <span class="absolute left-0 w-4 h-4 bg-sky-950 rounded-full"></span>
+      Payment verification
+    </li>
+    <li class="flex items-center pl-10 relative">
+      <span class="absolute left-0 w-4 h-4 bg-sky-950 rounded-full"></span>
+      Instant virtual cards creation
+    </li>
+    <li class="flex items-center pl-10 relative">
+      <span class="absolute left-0 w-4 h-4 bg-sky-950 rounded-full"></span>
+      Customer verification
+    </li>
+  </ul>
 
-<footer class="border-t mt-20">
+  <button class="mt-6 bg-sky-950 text-white rounded-lg py-3 px-6">Read the API Docs</button>
+</section>
 
+<!-- GLOBAL REACH -->
+<section class="px-4 sm:px-10 md:px-20 mt-20">
+  <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold font-serif hover:text-teal-400">Our <span class="text-sky-900">Global</span> reach</h1>
+  <div class="flex flex-col md:flex-row flex-wrap gap-10 mt-10">
+    <!-- STATS & INFO -->
+    <div class="flex-1 min-w-[250px] flex gap-4">
+      <div class="flex flex-col items-center gap-2">
+        <p>||</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+        <p>||</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+      </div>
+      <div class="flex-1">
+        <div class="mb-6">
+          <h2 class="text-teal-500 font-extrabold hover:text-teal-400 text-lg">30+ Currencies</h2>
+          <p>We accept payments in more than thirty currencies.</p>
+        </div>
+        <div class="mb-6">
+          <h2 class="text-lg font-extrabold hover:text-teal-400">20M+ API calls</h2>
+          <p>API calls per day, peaking at 231 requests per second.</p>
+        </div>
+        <div>
+          <h2 class="text-lg font-extrabold hover:text-teal-400">500k+ payments daily</h2>
+          <p>Average number of payments processed daily.</p>
+          <div class="flex gap-6 mt-4 flex-wrap">
+            <div>
+              <p>Debit & Credit cards</p>
+              <p>Mobile money</p>
+              <p>M-Pesa</p>
+              <p>Bank Transfer</p>
+            </div>
+            <div>
+              <p>Bank Account</p>
+              <p>POS</p>
+              <p>VISA QR</p>
+              <p>USSD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- IMAGE -->
+    <div class="flex-1 flex justify-center">
+      <img src="Screenshot 2024-09-18 175329.png" alt="Global" class="w-full sm:w-[400px] md:w-[600px] object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- GET STARTED -->
+<section class="px-4 sm:px-10 md:px-20 bg-slate-950 text-white rounded-lg mt-20 py-10 text-center">
+  <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold hover:text-teal-400 mb-4">Ready to get started?</h1>
+  <p class="text-base sm:text-lg md:text-xl mb-4">Create an account and instantly start accepting payments, selling your products online, and building financial tools.</p>
+  <a href="#" class="inline-flex items-center justify-center text-lg font-semibold bg-blue-600 py-2 px-4 rounded hover:bg-blue-500 transition">Contact Sales <span class="ml-2">></span></a>
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-20 border-t px-4 sm:px-10 md:px-20 py-10">
   <!-- COUNTRY SELECTOR -->
-  <div class="relative mx-[200px] my-10">
-    <!-- Button showing default country -->
-    <button
-      id="countryBtn"
-      class="flex items-center gap-3 px-4 py-2 border rounded-lg bg-white text-slate-900 hover:bg-slate-100 transition w-56"
-    >
+  <div class="relative mb-10">
+    <button id="countryBtn" class="flex items-center gap-3 px-4 py-2 border rounded-lg bg-white w-56">
       <img src="flags/us.svg" alt="US Flag" class="w-5 h-5 rounded-full">
       <span class="flex-1 text-left">United States</span>
-
-      <!-- Arrow icon -->
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M19 9l-7 7-7-7" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
       </svg>
     </button>
-
-    <!-- Dropdown list -->
-    <div
-      id="countryMenu"
-      class="flex justify-center hidden absolute bottom-full mb-2 w-56 bg-white border rounded-lg shadow-lg z-50"
-    >
-      <button class="flex items-center gap-3 w-full px-4 py-2 hover:bg-slate-100">
-        <img src="flags/us.svg" class="w-5 h-5 rounded-full">
-        United States
-      </button>
-
-      <button class="flex items-center gap-3 w-full px-4 py-2 hover:bg-slate-100">
-        <img src="flags/ng.svg" class="w-5 h-5 rounded-full">
-        Nigeria
-      </button>
-
-      <button class="flex items-center gap-3 w-full px-4 py-2 hover:bg-slate-100">
-        <img src="flags/gb.svg" class="w-5 h-5 rounded-full">
-        United Kingdom
-      </button>
+    <div id="countryMenu" class="hidden absolute mt-2 w-56 bg-white border rounded-lg shadow-lg z-50">
+      <button class="flex items-center gap-3 w-full px-4 py-2 hover:bg-slate-100"><img src="flags/us.svg" class="w-5 h-5 rounded-full"> United States</button>
+      <button class="flex items-center gap-3 w-full px-4 py-2 hover:bg-slate-100"><img src="flags/ng.svg" class="w-5 h-5 rounded-full"> Nigeria</button>
+      <button class="flex items-center gap-3 w-full px-4 py-2 hover:bg-slate-100"><img src="flags/gb.svg" class="w-5 h-5 rounded-full"> United Kingdom</button>
     </div>
   </div>
 
   <!-- FOOTER LINKS -->
-  <section class="flex flex-wrap gap-10 justify-center mx-[200px] pb-20">
-
+  <div class="flex flex-wrap gap-10 justify-center">
     <div>
-      <h1 class="text-xl font-mono font-bold text-slate-950 hover:text-teal-400 transition">
-        Collect Payments
-      </h1>
-
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">Send Money</h2>
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">Store</h2>
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">Invoices</h2>
+      <h1 class="text-xl font-bold hover:text-teal-400">Collect Payments</h1>
+      <h2 class="text-lg hover:text-teal-400">Send Money</h2>
+      <h2 class="text-lg hover:text-teal-400">Store</h2>
+      <h2 class="text-lg hover:text-teal-400">Invoices</h2>
     </div>
-
     <div>
-      <h1 class="text-xl font-mono font-bold text-slate-950 hover:text-teal-400 transition">
-        Resources
-      </h1>
-
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">Pricing</h2>
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">Blog</h2>
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">Integrations</h2>
+      <h1 class="text-xl font-bold hover:text-teal-400">Resources</h1>
+      <h2 class="text-lg hover:text-teal-400">Pricing</h2>
+      <h2 class="text-lg hover:text-teal-400">Blog</h2>
+      <h2 class="text-lg hover:text-teal-400">Integrations</h2>
     </div>
-
     <div>
-      <h1 class="text-xl font-mono font-bold text-slate-950 hover:text-teal-400 transition">
-        Developers
-      </h1>
-
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">
-        API Documentation
-      </h2>
-      <h2 class="text-lg font-mono text-slate-950 hover:text-teal-400 transition">
-        API Reference
-      </h2>
+      <h1 class="text-xl font-bold hover:text-teal-400">Developers</h1>
+      <h2 class="text-lg hover:text-teal-400">API Documentation</h2>
+      <h2 class="text-lg hover:text-teal-400">API Reference</h2>
     </div>
-
-  </section>
+  </div>
 </footer>
 
 <!-- SCRIPT -->
 <script>
   const btn = document.getElementById("countryBtn");
   const menu = document.getElementById("countryMenu");
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-
-  window.addEventListener("click", (e) => {
-    if (!btn.contains(e.target) && !menu.contains(e.target)) {
-      menu.classList.add("hidden");
-    }
-  });
+  btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+  window.addEventListener("click", (e) => { if (!btn.contains(e.target) && !menu.contains(e.target)) menu.classList.add("hidden"); });
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-</main>
 </body>
 </html>
